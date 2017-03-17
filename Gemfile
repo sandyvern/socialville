@@ -21,6 +21,7 @@ gem 'devise', '~> 4.2', '>= 4.2.1'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'bootstrap-sass-extras', '~> 0.0.7'
 gem 'paperclip', '~> 5.1'
+gem 'aws-sdk', '~> 2.8', '>= 2.8.7'
 
 gem 'pg', '~> 0.20.0', group: :production
 gem 'rails_12factor', '~> 0.0.3', group: :production

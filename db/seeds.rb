@@ -23,13 +23,13 @@ user = User.create(username: "Stu",
                    
 puts user.inspect
 
-10.times do |blog|
-  Status.create!(
-    name: "My latest status #{status}",
-    content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto 
-    beatae vitae dicta sunt explicabo."
-  )
-end
+# 10.times do |status|
+#   Status.create!(
+#     name: "My latest status #{status}",
+#     content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+#     laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto 
+#     beatae vitae dicta sunt explicabo."
+#   )
+# end
 
-puts "10 statuses created"
+# puts "10 statuses created"

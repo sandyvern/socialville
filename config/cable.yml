@@ -1,9 +1,10 @@
 development:
-  adapter: async
+  adapter: redis
+  url: redis://:boodog@redis-17737.c12.us-east-1-4.ec2.cloud.redislabs.com:17737
 
 test:
   adapter: async
 
 production:
   adapter: redis
-  url: redis://localhost:6379/1
+  url: redis://:boodog@redis-17737.c12.us-east-1-4.ec2.cloud.redislabs.com:17737

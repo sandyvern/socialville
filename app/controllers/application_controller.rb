@@ -27,7 +27,8 @@ class ApplicationController < ActionController::Base
                                                           :gender,
                                                           :location,
                                                           :bio,
-                                                          :alt_email
+                                                          :alt_email,
+                                                          :cover
                                                           ) 
                                                           }  
   end

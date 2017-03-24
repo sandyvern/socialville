@@ -10,14 +10,19 @@
     <div class="form-inputs">
       
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
           <%= f.input :username, required: true, autofocus: true, label: false, 
                 placeholder: "Enter a username" %>
         </div>
         
-        <div class="col-md-6">
+        <div class="col-md-4">
           <%= f.input :email, required: true, label: false, 
                   placeholder: "Enter your email" %>
+        </div>
+        
+        <div class="col-md-4">
+          <%= f.input :alt_email, required: false, label: false, 
+                  placeholder: "Enter an alternate public email" %>
         </div>
       </div>  
         

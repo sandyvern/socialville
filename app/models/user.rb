@@ -17,7 +17,7 @@ class User < ApplicationRecord
     validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
     
   has_attached_file :cover, styles: { cover: "700x300>", preview: "230x100>" }, 
-    default_url: "https://s3.amazonaws.com/socialville/:attachment/missing_:style.jpg"  
+    default_url: "https://s3.amazonaws.com/sandy-socialville/:attachment/missing_:style.jpeg" 
     validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/ 
     
   # Making Friends ---------------------

@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :statuses
+  resources :statuses do 
+    resources :messages
+  end
   root to: 'statuses#index'
   
   # Making Friends ---------------------

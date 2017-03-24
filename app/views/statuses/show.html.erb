@@ -19,7 +19,17 @@
             <i class="fa fa-calendar"></i>
             <%= time_ago_in_words(@status.created_at) + ' ago' %>
             </h5>
-            <p class="description"><%= @status.content %></p>    
+            <p class="description"><%= @status.content %> 
+            
+                <div id="messages">
+                  <%= render @messages %>
+                </div>
+                
+                <form>
+                  <label>Say something:</label><br>
+                  <input type="text" data-behavior="room_speaker">
+                </form>
+            </p>
         </div>
         <div class="col-sm-4" data-no-turbolink="">
           <%= link_to ' Back', statuses_path, class: "btn btn-info btn-download btn-round pull-right makeLoading fa fa-share" %>

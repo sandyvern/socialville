@@ -7,18 +7,29 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 user = User.create(username: "BabaBooey",
-                   email: "baba@example.com", 
-                   password: "password", 
-                   password_confirmation: "password")
+                  email: "baba@example.com", 
+                  password: "password", 
+                  password_confirmation: "password")
                    
 user = User.create(username: "Steve",
-                   email: "steve@example.com", 
-                   password: "password", 
-                   password_confirmation: "password")
+                  email: "steve@example.com", 
+                  password: "password", 
+                  password_confirmation: "password")
                    
- user = User.create(username: "Stu",
-                   email: "stus@example.com", 
-                   password: "password", 
-                   password_confirmation: "password")  
+user = User.create(username: "Stu",
+                  email: "stu@example.com", 
+                  password: "password", 
+                  password_confirmation: "password")  
                    
 puts user.inspect
+
+10.times do |blog|
+  Status.create!(
+    name: "My latest status #{status}",
+    content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto 
+    beatae vitae dicta sunt explicabo."
+  )
+end
+
+puts "10 statuses created"

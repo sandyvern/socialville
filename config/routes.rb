@@ -11,4 +11,6 @@ Rails.application.routes.draw do
     end
   end
   # Making Friends ---------------------
+  
+  mount ActionCable.server => '/cable'
 end

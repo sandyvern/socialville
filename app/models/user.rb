@@ -6,7 +6,7 @@ class User < ApplicationRecord
          
   validates :username, uniqueness: { case_sensitive: true}
   has_many :statuses
-  
+  has_many :messages
   # Making Friends ---------------------
   has_many :friendships, dependent: :destroy
   has_many :inverse_friendships, class_name: "Friendship", foreign_key: "friend_id", dependent: :destroy

@@ -6,6 +6,15 @@
 	display: inline;
 }
 
+
+.status .admin {
+	display: none;
+}
+
+.status.hover .admin {
+	display: inline;
+}
+
 .form-image {
 	padding-bottom: 10px;
 }

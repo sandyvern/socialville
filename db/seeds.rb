@@ -14,19 +14,28 @@ user = User.create(username: "Sandy",
                    age: "November 13 1974",
                    gender: "Female",
                    alt_email: "anything@example.com",
-                   location: "England"
+                   location: "England",
+                   facebook: "https://www.facebook.com/sandy",
+                   twitter: "https://twitter.com/ScottGPatterson",
+                   youtube: "https://www.youtube.com/user/sandy",
+                   instagram: "https://www.instagram.com/sandy",
+                   github: "https://github.com/sandy"
                    )
                    
 
 user = User.create(username: "Scott",
-                   email: "scottl@example.com", 
+                   email: "scott@example.com", 
                    password: "password", 
                    password_confirmation: "password",
                    bio: "Nam an errem signiferumque, facilis argumentum ex mea. Omnis option no per, eu est nusquam scripserit. Ut duo commodo tractatos, ut phaedrum praesent sea, vis pericula suscipiantur et. At qui adhuc minimum tincidunt. Eu phaedrum reprehendunt eam. An vim liber elitr tempor, qui at pertinax petentium, ad qui salutatus patrioque theophrastus. Et mei causae omnesque.",
                    age: "April 29 1972",
                    gender: "Male",
                    alt_email: "nothing@example.com",
-                   location: "England"
+                   location: "England",
+                   twitter: "https://twitter.com/ScottGPatterson",
+                   youtube: "https://www.youtube.com/user/sandy",
+                   instagram: "https://www.instagram.com/sandy",
+                   github: "https://github.com/sandy"
                    )
                    
 user = User.create(username: "Eric The Actor",
@@ -37,7 +46,11 @@ user = User.create(username: "Eric The Actor",
                  age: "January 10 1957",
                  gender: "Male",
                  alt_email: "morething@example.com",
-                 location: "England"
+                 location: "England",
+                 twitter: "https://twitter.com/ScottGPatterson",
+                 youtube: "https://www.youtube.com/user/sandy",
+                 instagram: "https://www.instagram.com/sandy",
+                 github: "https://github.com/sandy"
                  )
                  
 user = User.create(username: "High Pitch",
@@ -48,7 +61,11 @@ user = User.create(username: "High Pitch",
                  age: "January 10 1933",
                  gender: "Female",
                  alt_email: "allthing@example.com",
-                 location: "England"
+                 location: "England",
+                 twitter: "https://twitter.com/ScottGPatterson",
+                 youtube: "https://www.youtube.com/user/sandy",
+                 instagram: "https://www.instagram.com/sandy",
+                 github: "https://github.com/sandy"
                  )
                  
 user = User.create(username: "Layla",
@@ -59,7 +76,11 @@ user = User.create(username: "Layla",
                  age: "January 11 1968",
                  gender: "Female",
                  alt_email: "specialthing@example.com",
-                 location: "England"
+                 location: "England",
+                 twitter: "https://twitter.com/ScottGPatterson",
+                 youtube: "https://www.youtube.com/user/sandy",
+                 instagram: "https://www.instagram.com/sandy",
+                 github: "https://github.com/sandy"
                  )     
                  
 user = User.create(username: "Addi",
@@ -70,7 +91,11 @@ user = User.create(username: "Addi",
                    age: "February 14 1980",
                    gender: "Female",
                    alt_email: "amazingthing@example.com",
-                   location: "England"
+                   location: "England",
+                   twitter: "https://twitter.com/ScottGPatterson",
+                   youtube: "https://www.youtube.com/user/sandy",
+                   instagram: "https://www.instagram.com/sandy",
+                   github: "https://github.com/sandy"
                    )
                    
 
@@ -82,7 +107,11 @@ user = User.create(username: "Sally",
                    age: "May 10 1985",
                    gender: "Female",
                    alt_email: "silverthing@example.com",
-                   location: "England"
+                   location: "England",
+                   twitter: "https://twitter.com/ScottGPatterson",
+                   youtube: "https://www.youtube.com/user/sandy",
+                   instagram: "https://www.instagram.com/sandy",
+                   github: "https://github.com/sandy"
                    )
                    
 user = User.create(username: "Clark",
@@ -93,7 +122,11 @@ user = User.create(username: "Clark",
                  age: "November 26 1985",
                  gender: "Mayale",
                  alt_email: "goldthing@example.com",
-                 location: "England"
+                 location: "England",
+                 twitter: "https://twitter.com/ScottGPatterson",
+                 youtube: "https://www.youtube.com/user/sandy",
+                 instagram: "https://www.instagram.com/sandy",
+                 github: "https://github.com/sandy"
                  )
                  
 user = User.create(username: "Rails Lover",
@@ -104,7 +137,11 @@ user = User.create(username: "Rails Lover",
                  age: "January 10 1933",
                  gender: "Female",
                  alt_email: "rubything@example.com",
-                 location: "England"
+                 location: "England",
+                 twitter: "https://twitter.com/ScottGPatterson",
+                 youtube: "https://www.youtube.com/user/sandy",
+                 instagram: "https://www.instagram.com/sandy",
+                 github: "https://github.com/sandy"
                  )
                  
 user = User.create(username: "Essentials",
@@ -115,7 +152,11 @@ user = User.create(username: "Essentials",
                  age: "January 10 1933",
                  gender: "Female",
                  alt_email: "anything@example.com",
-                 location: "England"
+                 location: "England",
+                 twitter: "https://twitter.com/ScottGPatterson",
+                 youtube: "https://www.youtube.com/user/sandy",
+                 instagram: "https://www.instagram.com/sandy",
+                 github: "https://github.com/sandy"
                  )    
                  
 user = User.create(username: "Buddy Guy",
@@ -126,7 +167,11 @@ user = User.create(username: "Buddy Guy",
                    age: "October 10 1996",
                    gender: "Male",
                    alt_email: "guything@example.com",
-                   location: "England"
+                   location: "England",
+                   twitter: "https://twitter.com/ScottGPatterson",
+                   youtube: "https://www.youtube.com/user/sandy",
+                   instagram: "https://www.instagram.com/sandy",
+                   github: "https://github.com/sandy"
                    )
              
 user = User.create(username: "Dad",
@@ -137,7 +182,11 @@ user = User.create(username: "Dad",
                  age: "March 17 1955",
                  gender: "Male",
                  alt_email: "dadthing@example.com",
-                 location: "England"
+                 location: "England",
+                 twitter: "https://twitter.com/ScottGPatterson",
+                 youtube: "https://www.youtube.com/user/sandy",
+                 instagram: "https://www.instagram.com/sandy",
+                 github: "https://github.com/sandy"
                  )
                  
 user = User.create(username: "Oscar",
@@ -148,7 +197,11 @@ user = User.create(username: "Oscar",
                  age: "August 10 1980",
                  gender: "Male",
                  alt_email: "anything@example.com",
-                 location: "England"
+                 location: "England",
+                 twitter: "https://twitter.com/ScottGPatterson",
+                 youtube: "https://www.youtube.com/user/sandy",
+                 instagram: "https://www.instagram.com/sandy",
+                 github: "https://github.com/sandy"
                  )
                  
 user = User.create(username: "Rain Man",
@@ -159,7 +212,11 @@ user = User.create(username: "Rain Man",
                  age: "August 11 1998",
                  gender: "Male",
                  alt_email: "rainthing@example.com",
-                 location: "England"
+                 location: "England",
+                 twitter: "https://twitter.com/ScottGPatterson",
+                 youtube: "https://www.youtube.com/user/sandy",
+                 instagram: "https://www.instagram.com/sandy",
+                 github: "https://github.com/sandy"
                  )     
                  
                  
@@ -171,7 +228,11 @@ user = User.create(username: "Bowie",
                    age: "September 20 1965",
                    gender: "Male",
                    alt_email: "rockthing@example.com",
-                   location: "England"
+                   location: "England",
+                   twitter: "https://twitter.com/ScottGPatterson",
+                   youtube: "https://www.youtube.com/user/sandy",
+                   instagram: "https://www.instagram.com/sandy",
+                   github: "https://github.com/sandy"
                    )
                    
 
@@ -183,7 +244,11 @@ user = User.create(username: "Stratocaster",
                    age: "January 10 1933",
                    gender: "Female",
                    alt_email: "anything@example.com",
-                   location: "England"
+                   location: "England",
+                   twitter: "https://twitter.com/ScottGPatterson",
+                   youtube: "https://www.youtube.com/user/sandy",
+                   instagram: "https://www.instagram.com/sandy",
+                   github: "https://github.com/sandy"
                    )
                    
 user = User.create(username: "Bill Burr",
@@ -194,7 +259,11 @@ user = User.create(username: "Bill Burr",
                  age: "June 10 1962",
                  gender: "Male",
                  alt_email: "anything@example.com",
-                 location: "England"
+                 location: "England",
+                 twitter: "https://twitter.com/ScottGPatterson",
+                 youtube: "https://www.youtube.com/user/sandy",
+                 instagram: "https://www.instagram.com/sandy",
+                 github: "https://github.com/sandy"
                  )
                  
 user = User.create(username: "Clapton",
@@ -205,7 +274,11 @@ user = User.create(username: "Clapton",
                  age: "December 23 1957",
                  gender: "Male",
                  alt_email: "rollthing@example.com",
-                 location: "England"
+                 location: "England",
+                 twitter: "https://twitter.com/ScottGPatterson",
+                 youtube: "https://www.youtube.com/user/sandy",
+                 instagram: "https://www.instagram.com/sandy",
+                 github: "https://github.com/sandy"
                  )
                  
 user = User.create(username: "Pete Townsend",
@@ -216,7 +289,11 @@ user = User.create(username: "Pete Townsend",
                  age: "April 25 1956",
                  gender: "Male",
                  alt_email: "anything@example.com",
-                 location: "England"
+                 location: "England",
+                 twitter: "https://twitter.com/ScottGPatterson",
+                 youtube: "https://www.youtube.com/user/sandy",
+                 instagram: "https://www.instagram.com/sandy",
+                 github: "https://github.com/sandy"
                  )      
                  
 user = User.create(username: "Margret",
@@ -227,7 +304,11 @@ user = User.create(username: "Margret",
                    age: "May 5 1995",
                    gender: "Female",
                    alt_email: "anything@example.com",
-                   location: "England"
+                   location: "England",
+                   twitter: "https://twitter.com/ScottGPatterson",
+                   youtube: "https://www.youtube.com/user/sandy",
+                   instagram: "https://www.instagram.com/sandy",
+                   github: "https://github.com/sandy"
                    )
                    
 
@@ -239,7 +320,11 @@ user = User.create(username: "Sal",
                    age: "January 10 1933",
                    gender: "Male",
                    alt_email: "anything@example.com",
-                   location: "England"
+                   location: "England",
+                   twitter: "https://twitter.com/ScottGPatterson",
+                   youtube: "https://www.youtube.com/user/sandy",
+                   instagram: "https://www.instagram.com/sandy",
+                   github: "https://github.com/sandy"
                    )
                    
 user = User.create(username: "Fred Flintstone",
@@ -250,7 +335,11 @@ user = User.create(username: "Fred Flintstone",
                  age: "October 10 1955",
                  gender: "Male",
                  alt_email: "anything@example.com",
-                 location: "England"
+                 location: "England",
+                 twitter: "https://twitter.com/ScottGPatterson",
+                 youtube: "https://www.youtube.com/user/sandy",
+                 instagram: "https://www.instagram.com/sandy",
+                 github: "https://github.com/sandy"
                  )
                  
 user = User.create(username: "BamBam",
@@ -261,7 +350,11 @@ user = User.create(username: "BamBam",
                  age: "July 4 1967",
                  gender: "Male",
                  alt_email: "allanything@example.com",
-                 location: "England"
+                 location: "England",
+                 twitter: "https://twitter.com/ScottGPatterson",
+                 youtube: "https://www.youtube.com/user/sandy",
+                 instagram: "https://www.instagram.com/sandy",
+                 github: "https://github.com/sandy"
                  )
                  
 user = User.create(username: "Colin Quinn",
@@ -272,25 +365,24 @@ user = User.create(username: "Colin Quinn",
                  age: "November 5 1979",
                  gender: "Male",
                  alt_email: "anything@example.com",
-                 location: "England"
+                 location: "England",
+                 twitter: "https://twitter.com/ScottGPatterson",
+                 youtube: "https://www.youtube.com/user/sandy",
+                 instagram: "https://www.instagram.com/sandy",
+                 github: "https://github.com/sandy"
                  )                     
                    
 puts user.inspect 
 
-10.times do |status|
-  Status.create!(
-    name: "Exciting Status Update",
-    content: "Very exciting new adventures are about to begin")
-    user_id: User.last.id
-end
+# 10.times do |status|
+#   Status.create!(
+#     name: "Exciting Status Update",
+#     content: "Very exciting new adventures are about to begin")
+# end
   
-10.times do |status|
-  Status.create!(
-    name: "Another new status #{status}",
-    body: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
-   user_id: User.last.id
-  )
-end
-  
-  
-end
+# 10.times do |status|
+#   Status.create!(
+#     name: "Another new status #{status}",
+#     body: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+#   )
+# end

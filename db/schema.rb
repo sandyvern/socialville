@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170324201103) do
+ActiveRecord::Schema.define(version: 20170326215352) do
 
   create_table "friendships", force: :cascade do |t|
     t.integer  "user_id"
@@ -72,6 +72,19 @@ ActiveRecord::Schema.define(version: 20170324201103) do
     t.integer  "cover_file_size"
     t.datetime "cover_updated_at"
     t.string   "cover"
+    t.string   "facebook"
+    t.boolean  "facebook_permission",    default: true
+    t.string   "twitter"
+    t.boolean  "twitter_permission",     default: true
+    t.string   "youtube"
+    t.boolean  "youtube_permission",     default: true
+    t.string   "instagram"
+    t.boolean  "instagram_permission",   default: true
+    t.string   "github"
+    t.boolean  "github_permission",      default: true
+    t.string   "linkedin"
+    t.boolean  "linkedin_permission",    default: true
+    t.boolean  "email_permission",       default: true
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true

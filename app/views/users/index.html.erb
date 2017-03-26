@@ -1,14 +1,16 @@
-<h2>Socialville Profiles</h2>
-  <div class="btn-group" role="group" aria-label="Default Button Groups">
-    <%= link_to "Everyone", users_path, class: "btn btn-default #{'active' unless params[:people]}" %>
-    <%= link_to "Friends", users_path(people: "friends"), class: "btn btn-default #{'active' if params[:people] == 'friends'}" %>
-    <%= link_to "Requests", users_path(people: "requests"), class: "btn btn-default #{'active' if params[:people] == 'requests'}" %>
-    <%= link_to "Pending", users_path(people: "pending"), class: "btn btn-default #{'active' if params[:people] == 'pending'}" %>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <%= render @users %>
-  </div>
-</div>
+<h2>Socialville User Profiles</h2>
+<% if current_user %>
+  <%= render @users %>
+ <% end %>
+ 
+ <% if params[:people] == 'friends' && @users.blank? %>
+   <h2>Sorry <strong class="username"><%= current_user.username %></strong>, you have no friends. Join now and connect with friends.</h2>
+ <% end %>
+ 
+ <% if params[:people] == 'requests' && @users.blank? %>
+   <h2>Sorry <strong class="username"><%= current_user.username %></strong>, you have no friend requests at this time.</h2>
+ <% end %>
+ 
+ <% if params[:people] == 'pending' && @users.blank? %>
+   <h2>Sorry <strong class="username"><%= current_user.username %></strong>, you have no pending friend requests at this time.</h2>
+ <% end %>

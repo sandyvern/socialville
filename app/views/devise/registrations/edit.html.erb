@@ -17,91 +17,112 @@
         
         <div class="col-md-4">
           <%= f.input :email, required: true, label: false, 
-                  placeholder: "Enter your email" %>
+                      placeholder: "Enter your email" %>
         </div>
         
         <div class="col-md-4">
           <%= f.input :alt_email, required: false, label: false, 
-                  placeholder: "Enter your public email" %>
+                      placeholder: "Enter an alternate public email" %>
         </div>
       </div>  
+      
+       <hr>
         
       <div class="row">  
         <div class="col-md-3">
-          <%= f.input :image, as: :file %>  <%= image_tag @user.image.url(:thumb), 
-                      class: "img-circle form-image" %>
-        </div>
-        
-        <div class="col-md-4">
-          <%= f.input :age, start_year: 1900, end_year: 2017, order: [:month, :day, :year], 
-                      required: false, label: "What is your birthday?" %>
+          <%= f.input :image, as: :file, label: "Profile Image" %>
         </div>
         
         <div class="col-md-2">
-          <%= f.input :gender, collection: ["Male", "Female", "Other"], include_blank: "Gender",
-                      label: "Gender", required: false %>
+          <%= image_tag @user.image.url(:thumb), class: "img-circle form-image" %>
+        </div>
+        
+        <div class="col-md-4">
+          <% if @user.age.present? %>
+            <p class="birthday-text">Your Birthday is on <span class="bday"><%= @user.age.strftime("%B %-d, %Y") %></span></p>
+          <% else %>
+            <p>When were you born?</p> 
+          <% end %>
+          <%= f.text_field :age, class: 'form-group form-control' %>
         </div>
         
         <div class="col-md-3">
-          <%= f.input :location, label: "Where are you located?", 
+          <%= f.input :gender, collection: ["Male", "Female", "Other"], include_blank: "Gender",
+                      label: "Gender", required: false %>
+        </div>
+      </div>
+      
+       <hr>
+      
+      <div class="row">
+        <div class="col-md-9">
+          <%= f.input :bio, required: false, autofocus: false, label: false, 
+                      placeholder: "Bio" %>
+        </div>
+        
+        <div class="col-md-3">
+          <%= f.input :location, label: false, 
                 placeholder: "Share your location" %>
         </div>
       </div>
       
-      <div class="row">
-        <div class="col-md-12">
-          <%= f.input :bio, required: false, autofocus: false, label: false, 
-                placeholder: "Bio" %>
-        </div> 
-      </div> 
+       <hr>
+      
           <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
             <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
           <% end %>
         
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-4">
             <%= f.input :current_password, required: true, label: false,  
                         placeholder: "Enter current password to save changes" %>
           </div>
           
-          <div class="col-md-12">
+          <div class="col-md-4">
               <%= f.input :password, autocomplete: "off", required: false, label: false,  
                           placeholder: "Change password" %>
           </div>
-        </div>
         
-        <div class="row">
-          <div class="col-md-10">
+          <div class="col-md-4">
               <%= f.input :password_confirmation, required: false, label: false,  
                           placeholder: "Confirm new password" %>
           </div>
-          
-          <div class="form-actions col-md-2">
-            <%= f.button :submit, "Update", class: 'btn btn-primary btn-block' %>
-          </div>
         </div>
+      </div>
+      
+      <hr>
         
         <div class="row">
-          <div class="col-md-4">
-            <%= f.input :cover, as: :file %> <%= image_tag @user.cover.url(:preview), 
+          <div class="col-md-3">
+            <%= f.input :cover, as: :file, label: "Cover Image" %> 
+          </div>
+          
+          <div class="col-md-3"> <%= image_tag @user.cover.url(:preview), 
                 class: "img-rounded text-center" %>
           </div>
           
-          <div class="col-md-4"></div>
-          <div class="col-md-4"></div>
+          <%= render 'devise/registrations/selectors', f: f %>
         </div>
         
-      </div>
-    </div>
+        <hr>
+        
+        <div class="row">
+          <div class="form-actions col-md-4 col-md-offset-4">
+            <%= f.button :submit, "Update", class: 'btn btn-primary btn-block' %>
+          </div>
+        </div>
+      </div>  
+     
   <% end %>
 
   <div class="panel-footer">
     <h3>Cancel my account</h3>
     
-    <p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, 
-                    method: :delete, class: 'btn btn-danger btn-xs' %></p>
+    <p>Unhappy? <span class="btn-delete"><%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, 
+                    method: :delete, class: 'btn btn-danger btn-xs' %></span></p>
     
     <%= link_to "Back", :back %>
   </div>
-  
+   
+  </div>
 </div>

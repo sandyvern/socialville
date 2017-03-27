@@ -28,7 +28,13 @@ class ApplicationController < ActionController::Base
                                                           :location,
                                                           :bio,
                                                           :alt_email,
-                                                          :cover
+                                                          :cover,
+                                                          :facebook_permission,
+                                                          :twitter_permission,
+                                                          :instagram_permission,
+                                                          :linkedin_permission,
+                                                          :birthday_permissions,
+                                                          :email_permission
                                                           ) 
                                                           }  
   end

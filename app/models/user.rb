@@ -60,7 +60,7 @@ class User < ApplicationRecord
   # Making Friends ---------------------
   
   def twitter_model
-    if self.twitter_permission == true
+    if self.twitter_permission == true && self.twitter.present?
       return self.twitter
     else
       return "Ask Me!"
@@ -68,7 +68,7 @@ class User < ApplicationRecord
   end
   
   def facebook_model
-    if self.facebook_permission == true
+    if self.facebook_permission == true && self.facebook.present?
       return self.facebook
     else
       return "Ask Me!"
@@ -76,7 +76,7 @@ class User < ApplicationRecord
   end
   
   def youtube_model
-    if self.youtube_permission == true
+    if self.youtube_permission == true && self.youtube.present?
       return self.youtube
     else
       return "Ask Me!"
@@ -84,7 +84,7 @@ class User < ApplicationRecord
   end
   
   def instagram_model
-    if self.instagram_permission == true
+    if self.instagram_permission == true && self.instagram.present?
       return self.instagram
     else
       return "Ask Me!"
@@ -96,6 +96,14 @@ class User < ApplicationRecord
       return self.age.strftime('%B %e, %Y')
     else
       return "Wanna buy me a gift??"
+    end
+  end
+  
+  def location_model
+    if self.location.present?
+      return self.location
+    else
+      return "Where in the world are you #{self.username}??"
     end
   end
   

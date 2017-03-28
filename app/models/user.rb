@@ -107,4 +107,16 @@ class User < ApplicationRecord
     end
   end
   
+  def email_model
+    if self.email_permission == true
+      return self.email
+    elsif self.alt_email.present? && self.email_permission == false
+      return self.alt_email
+    else
+      return "I'm not feeling like sharing today!"
+    end
+      
+        
+  end
+  
 end

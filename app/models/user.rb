@@ -83,7 +83,6 @@ class User < ApplicationRecord
     end
   end
   
-  
   def instagram_model
     if self.instagram_permission == true
       return self.instagram

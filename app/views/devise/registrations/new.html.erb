@@ -38,12 +38,12 @@
         </div>
       
         <div class="col-md-4">
+          <%= f.text_field :age, class: 'form-group form-control' %>
           <% if @user.age.present? %>
             <p class="birthday-text">Your Birthday is on <span class="bday"><%= @user.age.strftime("%B %-d, %Y") %></span></p>
           <% else %>
             <p class="birthday-text">When were you born?</p> 
           <% end %>
-          <%= f.text_field :age, class: 'form-group form-control' %>
         </div>
         
         <div class="col-md-3">

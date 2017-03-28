@@ -8,7 +8,7 @@
   
   <div class="panel-body">
     <div class="form-inputs">
-      
+
       <div class="row">
         <div class="col-md-4">
           <%= f.input :username, required: true, autofocus: true, label: false, 
@@ -20,13 +20,14 @@
                       placeholder: "Enter your email" %>
         </div>
         
-        <div class="col-md-4">
+        <div class="col-md-4 no-bullets">
           <%= f.input :alt_email, required: false, label: false, 
                       placeholder: "Enter an alternate public email" %>
+           <li><%= f.input :email_permission, label: "Show your publice email?" %></li>
         </div>
       </div>  
       
-       <hr>
+      <hr>
         
       <div class="row">  
         <div class="col-md-3">
@@ -37,13 +38,16 @@
           <%= image_tag @user.image.url(:thumb), class: "img-circle form-image" %>
         </div>
         
-        <div class="col-md-4">
+        <div class="col-md-4 no-bullets">
           <% if @user.age.present? %>
             <p class="birthday-text">Your Birthday is on <span class="bday"><%= @user.age.strftime("%B %-d, %Y") %></span></p>
           <% else %>
             <p>When were you born?</p> 
           <% end %>
+          
           <%= f.text_field :age, class: 'form-group form-control' %>
+          
+          <li><%= f.input :birthday_permissions, label: "Show your birthday?"  %></li>
         </div>
         
         <div class="col-md-3">
@@ -52,7 +56,7 @@
         </div>
       </div>
       
-       <hr>
+      <hr>
       
       <div class="row">
         <div class="col-md-9">
@@ -66,55 +70,56 @@
         </div>
       </div>
       
-       <hr>
+      <hr>
       
-          <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-            <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
-          <% end %>
+      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+        <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
+      <% end %>
         
-        <div class="row">
-          <div class="col-md-4">
-            <%= f.input :current_password, required: true, label: false,  
-                        placeholder: "Enter current password to save changes" %>
-          </div>
-          
-          <div class="col-md-4">
-              <%= f.input :password, autocomplete: "off", required: false, label: false,  
-                          placeholder: "Change password" %>
-          </div>
-        
-          <div class="col-md-4">
-              <%= f.input :password_confirmation, required: false, label: false,  
-                          placeholder: "Confirm new password" %>
-          </div>
+      <div class="row">
+        <div class="col-md-3">
+          <%= f.input :cover, as: :file, label: "Cover Image" %> 
         </div>
-      </div>
+          
+        <div class="col-md-3"> <%= image_tag @user.cover.url(:preview), 
+              class: "img-rounded text-center" %>
+        </div>
+          
+        <%= render 'devise/registrations/social', f: f %>
+      </div> 
       
       <hr>
         
-        <div class="row">
-          <div class="col-md-3">
-            <%= f.input :cover, as: :file, label: "Cover Image" %> 
-          </div>
-          
-          <div class="col-md-3"> <%= image_tag @user.cover.url(:preview), 
-                class: "img-rounded text-center" %>
-          </div>
-          
-          <%= render 'devise/registrations/selectors', f: f %>
+      <div class="row">
+        <div class="col-md-4">
+          <%= f.input :current_password, required: true, label: false,  
+                      placeholder: "Enter current password to save changes" %>
         </div>
         
-        <hr>
-        
-        <div class="row">
-          <div class="form-actions col-md-4 col-md-offset-4">
-            <%= f.button :submit, "Update", class: 'btn btn-primary btn-block' %>
-          </div>
+        <div class="col-md-4">
+          <%= f.input :password, autocomplete: "off", required: false, label: false,  
+                      placeholder: "Change password" %>
         </div>
-      </div>  
-     
-  <% end %>
+        
+        <div class="col-md-4">
+          <%= f.input :password_confirmation, required: false, label: false,  
+                      placeholder: "Confirm new password" %>
+        </div>
+        </div>
+      </div>
+    
+      <hr>
+      
+      <div class="row">
+        <div class="form-actions col-md-4 col-md-offset-4">
+          <%= f.button :submit, "Update", class: 'btn btn-primary btn-block' %>
+        </div>
+      </div>
+    </div>
 
+    <% end %>
+   
+   
   <div class="panel-footer">
     <h3>Cancel my account</h3>
     

@@ -50,13 +50,14 @@
             
             <div class="col-sm-4"> 
                 <i class="fa fa-twitter-square"></i>
-                <%= link_to 'Twitter Profile', user.twitter, target: '_blank' %>
-                <%#= user.twitter_model %>
+                <%#= link_to 'Twitter Profile', user.twitter, target: '_blank' %>
+                <%= user.twitter_model %>
             </div>
             
             <div class="col-sm-4"> 
-                <i class="fa fa-facebook"></i> 
-                <%= link_to 'Facebook Profile', user.facebook, target: '_blank' %>
+                <i class="fa fa-facebook"></i>
+                <%= user.facebook_model %>
+                
                 <%#= link_to user.facebook_model, user.facebook_model, target: '_blank' %> 
             </div>
             
@@ -68,7 +69,7 @@
             
             <div class="col-sm-4"> 
                 <i class="fa fa-youtube"></i>
-                <%= link_to "My YouTube Channel", user.youtube, target: "_blank" %>
+                <%=  user.youtube_model %>
                 <%#= link_to "My YouTube Channel", user.youtube_model, target: "_blank" %>
             </div>
             

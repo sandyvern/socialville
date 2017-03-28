@@ -19,7 +19,7 @@
         <div class="media-body">
           <h5 class="list-group-item-heading">
             <small class="pull-right"><%= link_to time_ago_in_words(status.created_at) + ' ago', status %></small>
-            <strong><%= status.name %></strong>
+            <strong><%= link_to status.name, status_path(status) %></strong>
           </h5>
           <p class="list-group-item-text"><%= status.content %></p>
           <span class="admin">

@@ -58,4 +58,38 @@ class User < ApplicationRecord
     Friendship.where(user_id: [self.id,user_2.id], friend_id: [self.id,user_2.id]).first
   end
   # Making Friends ---------------------
+  
+  def twitter_model
+    if self.twitter_permission == true
+      return self.twitter
+    else
+      return "Ask Me!"
+    end
+  end
+  
+  def facebook_model
+    if self.facebook_permission == true
+      return self.facebook
+    else
+      return "Ask Me!"
+    end
+  end
+  
+  def youtube_model
+    if self.youtube_permission == true
+      return self.youtube
+    else
+      return "Ask Me!"
+    end
+  end
+  
+  
+  def instagram_model
+    if self.instagram_permission == true
+      return self.instagram
+    else
+      return "Ask Me!"
+    end
+  end
+  
 end

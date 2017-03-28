@@ -1,0 +1,39 @@
+<div class="col-md-3">
+  <ul class="no-bullets">
+    <div>
+      <%= f.input :facebook, label: false, placeholder: "Facebbok URL"  %>
+      <li><%= f.input :facebook_permission, label: "Show your Facebbok link?"  %></li>
+    </div>
+    
+    <div>
+      <%= f.input :twitter, label: false, placeholder: "Twitter URL"  %>
+      <li><%= f.input :twitter_permission, label: "Show your Twitter link?"  %></li>
+    </div>
+    
+    <div>
+      <%= f.input :instagram, label: false, placeholder: "Instagram URL"  %>
+      <li><%= f.input :instagram_permission, label: "Show your Instagram link?"  %></li>
+    </div>
+  </ul>
+</div>
+
+<div class="col-md-3">
+  <ul class="no-bullets">
+    <div>
+      <%= f.input :linkedin, label: false, placeholder: "LinkedIn URL"  %>
+      <li><%= f.input :linkedin_permission, label: "Show your Linkedin link?"  %></li>
+    </div>
+    
+    <div>
+      <%= f.input :github, label: false, placeholder: "GitHub URL"  %>
+      <li><%= f.input :github_permission, label: "Show your GitHub link?"  %></li>
+    </div>
+    
+    <div>
+      <li>
+        <%= f.input :youtube, label: false, placeholder: "YouTube URL"  %>
+        <li><%= f.input :youtube_permission, label: "Show your YouTube link?"  %></li>
+      </li>
+    </div>
+  </ul>
+</div>

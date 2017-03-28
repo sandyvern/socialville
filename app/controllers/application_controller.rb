@@ -34,7 +34,15 @@ class ApplicationController < ActionController::Base
                                                           :instagram_permission,
                                                           :linkedin_permission,
                                                           :birthday_permissions,
-                                                          :email_permission
+                                                          :email_permission,
+                                                          :github_permissions,
+                                                          :youtube_permissions,
+                                                          :facebook,
+                                                          :twitter_permission,
+                                                          :instagram,
+                                                          :linkedin,
+                                                          :github,
+                                                          :youtube
                                                           ) 
                                                           }  
   end

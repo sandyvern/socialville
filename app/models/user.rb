@@ -91,4 +91,12 @@ class User < ApplicationRecord
     end
   end
   
+  def birthday_model
+    if self.age.present?
+      return self.age.strftime('%B %e, %Y')
+    else
+      return "Wanna buy me a gift??"
+    end
+  end
+  
 end

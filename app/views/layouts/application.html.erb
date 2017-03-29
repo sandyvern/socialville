@@ -10,12 +10,14 @@
   </head>
 
   <body>
-    <%= render 'layouts/navigation/nav' %>
+    <%= render 'layouts/shared/nav' %>
     
     <%= bootstrap_flash %>
     
     <div class="container">
       <%= yield %>
     </div>
+    
+    <%= render 'layouts/shared/footer' %>
   </body>
 </html>

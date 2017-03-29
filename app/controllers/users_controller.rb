@@ -17,6 +17,7 @@ class UsersController < ApplicationController
 # Making Friends ---------------------	
 
   def show
+    @statuses = @user.statuses.all
   end
   
   private

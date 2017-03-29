@@ -15,8 +15,12 @@
     			<div class="row">
     				<div class="col-md-7">
     					<h3 class="panel-media-heading"><%= @user.username %></h3>
-    					<a href="#" class="btn-link">Member since <%= @user.created_at.to_time.strftime('%B %e, %Y') %></a>
-    					<p class="text-muted mar-btm">Birthday is <%= @user.age.to_time.strftime('%B %e') %></p>
+    					<span class="text-muted mar-btm">Has <%= @user.active_friends.count %> 
+			                 <%=  "Friend".pluralize(@user.active_friends.count) %>
+
+			        </span>
+			        <p><a href="#" class="btn-link">Member since <%= @user.created_at.to_time.strftime('%B %e, %Y') %></a></p>
+    					<p class="text-muted mar-btm">Birthday is <%= @user.birthday_model %></p>
     				</div>
     				<div class="col-md-5 pull-right">
     					<button class="btn btn-sm btn-primary">
@@ -36,6 +40,8 @@
     		</div>
     	</div>
     	<!--===================================================-->
-    
+     
     </div>
 	</div>
+	
+	 <%= render 'statuses/status' %>

@@ -1,5 +1,11 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
+  
+  rescue_from CanCan::AccessDenied do |exception|
+    flash[:danger] = "Security Issue -- You are not authorized to perform this action!"
+    redirect_to root_url
+  end
+  
   before_action :configure_permitted_parameters, if: :devise_controller?
 
   before_action :configure_permitted_parameters, if: :devise_controller?

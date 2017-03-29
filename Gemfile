@@ -11,7 +11,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
-gem 'turbolinks', '~> 5'
+# gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'redis', '~> 3.0'
 gem 'bcrypt', '~> 3.1.7'
@@ -25,6 +25,7 @@ gem 'aws-sdk', '~> 2.8', '>= 2.8.7'
 gem 'dotiw', '~> 3.1', '>= 3.1.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+gem 'cancancan', '~> 1.15'
 
 gem 'pg', '~> 0.20.0', group: :production
 gem 'rails_12factor', '~> 0.0.3', group: :production

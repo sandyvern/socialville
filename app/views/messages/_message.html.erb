@@ -1,10 +1,5 @@
 <%= render 'messages/template' %>
 
-<div class=“message”>
-  <p><%= message.content %></p>
-</div>
-
-
 <li class="right clearfix msg-li">
   <span class="chat-img pull-right img-rounded"> 
     <%= link_to user_path(message.user.username) do %>

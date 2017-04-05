@@ -10,15 +10,15 @@ class User < ApplicationRecord
   # Making Friends ---------------------
   has_many :friendships, dependent: :destroy
   has_many :inverse_friendships, class_name: "Friendship", foreign_key: "friend_id", dependent: :destroy
-  # Making Friends --------------------- 
+  # Making Friends ---------------------
          
-  has_attached_file :image, styles: { medium: "300x300>", thumb: "100x100>", micro: "40x40>" }, 
-    default_url: "https://s3.amazonaws.com/sandy-socialville/:attachment/missing_:style.png" 
+  has_attached_file :image, styles: { medium: "300x300>", thumb: "100x100>", micro: "40x40>" },
+    default_url: "https://s3.amazonaws.com/sandy-socialville/:attachment/missing_:style.png"
     validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
     
-  has_attached_file :cover, styles: { cover: "700x300>", preview: "230x100>" }, 
-    default_url: "https://s3.amazonaws.com/sandy-socialville/:attachment/missing_:style.jpeg" 
-    validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/ 
+  has_attached_file :cover, styles: { cover: "700x300>", preview: "230x100>" },
+    default_url: "https://s3.amazonaws.com/sandy-socialville/:attachment/missing_:style.jpeg"
+    validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
     
   # Making Friends ---------------------
   def request_friendship(user_2)

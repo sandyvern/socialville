@@ -26,6 +26,7 @@ gem 'dotiw', '~> 3.1', '>= 3.1.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'cancancan', '~> 1.15'
+gem 'rubocop', '~> 0.48.1', require: false
 
 gem 'pg', '~> 0.20.0', group: :production
 gem 'rails_12factor', '~> 0.0.3', group: :production
